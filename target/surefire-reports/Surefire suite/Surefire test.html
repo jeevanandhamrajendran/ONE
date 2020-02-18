@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 18 15:36:31 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>76 seconds (76742 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.stepDefinition.BaseTest.scenario()'><b>scenario</b><br>Test class: com.stepDefinition.BaseTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Booking Bus Ticket 1", "Automating RedBus feature"<br/>
+<a href="#Output-1810518740" onClick='toggleBox("Output-1810518740", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1810518740" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1810518740">
+<div "result">Launch the url - &quot;https:&#x2F;&#x2F;www.redbus.in&#x2F;&quot; (PASSED : 7s)</div><br/>
+<div "result">Select &quot;Koyambedu, Chennai&quot; in FROM textbox (PASSED : 0s)</div><br/>
+<div "result">Select &quot;Goa&quot; in TO textbox (PASSED : 0s)</div><br/>
+<div "result">Select &quot;19-Feb-2020&quot; in ONWARD DATE (PASSED : 0s)</div><br/>
+<div "result">Select &quot;26-Feb-2020&quot; in RETURN DATE (PASSED : 0s)</div><br/>
+<div "result">Click Search Buses button (PASSED : 0s)</div><br/>
+<div "result">Verify the following text -&gt; &quot;XX Buses found&quot; (Please make sure atleast one found). (FAILED : 60s)</div><br/>
+<div "result">Click VIEW SEATS button (SKIPPED)</div><br/>
+<div "result">Select any one of the available seat. (SKIPPED)</div><br/>
+<div "result">Select Sholinganallur radio button for Boarding point (SKIPPED)</div><br/>
+<div "result">Select Panjim radio button for Dropping point (SKIPPED)</div><br/>
+<div "result">Click the PROCEED TO BOOK button (SKIPPED)</div><br/>
+<div "result">Verify the tick mark icon present or not for ONWARD JOURNEY (SKIPPED)</div><br/>
+<div "result">Click the REMOVE RETURN button (SKIPPED)</div><br/>
+<div "result">Verify Passenger Details form is displayed or not (SKIPPED)</div><br/>
+<div "result">Enter Enter Name, Gender and age under Passenger Information (SKIPPED)</div><br/>
+<div "result">Enter Email Id as XYZ@zmail.com (SKIPPED)</div><br/>
+<div "result">Enter Phone number as 1122334455 (SKIPPED)</div><br/>
+<div "result">Uncheck the &quot;Send booking details and updates on watsapp number&quot; (SKIPPED)</div><br/>
+<div "result">Click PROCEED TO PAY button (SKIPPED)</div><br/>
+<div "result">Verify the PAYMENT OPTION page is visible. (SKIPPED)</div><br/>
+<div "result">Verify Your Passenger name is correct or not what you have entered in previous page (SKIPPED)</div><br/>
+<div "result">Verify Seat number is correct or not what you have selected (SKIPPED)</div><br/>
+<div "result">Click back to navigate previous page (SKIPPED)</div><br/>
+<div "result">Click back to navigate Home page (SKIPPED)</div><br/>
+<div "result">Unselect&#x2F;clear &quot;Koyambedu, Chennai&quot; in FROM textbox (SKIPPED)</div><br/>
+<div "result">Unselect&#x2F;Clear &quot;Goa (All Locations)&quot; in TO textbox (SKIPPED)</div><br/>
+<div "result">Unselect&#x2F;Clear &quot;19-Feb-2020&quot; in ONWARD DATE (SKIPPED)</div><br/>
+<div "result">Close the browser (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Search Bus Tickets&quot;. Current title: &quot;Book Bus Travels, AC Volvo Bus, rPool &amp; Bus Hire - redBus India&quot; (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-2OHSKTF&apos;, ip: &apos;10.80.80.194&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.106, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\GRHOMB~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63178}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f469c37f47314b558878a4f3f042751f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.utility.Util.explicit_wait_for_title_present(Util.java:50)
+	at com.stepDefinition.RedBus.verify_the_following_text_Please_make_sure_atleast_one_found(RedBus.java:59)
+	at ?.Verify the following text -&gt; &quot;XX Buses found&quot; (Please make sure atleast one found).(src/test/resources/features/resbus.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1810518740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810518740'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Search Bus Tickets&quot;. Current title: &quot;Book Bus Travels, AC Volvo Bus, rPool &amp; Bus Hire - redBus India&quot; (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-2OHSKTF&apos;, ip: &apos;10.80.80.194&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.106, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\GRHOMB~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63178}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f469c37f47314b558878a4f3f042751f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.utility.Util.explicit_wait_for_title_present(Util.java:50)
+	at com.stepDefinition.RedBus.verify_the_following_text_Please_make_sure_atleast_one_found(RedBus.java:59)
+	at ?.Verify the following text -&gt; &quot;XX Buses found&quot; (Please make sure atleast one found).(src/test/resources/features/resbus.feature:11)
+</pre></div></td>
+<td>69</td>
+<td>com.stepDefinition.BaseTest@53f65459</td></tr>
+</table><p>
+</body>
+</html>

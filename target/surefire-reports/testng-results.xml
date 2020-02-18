@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">Launch the url - &quot;https:&#x2F;&#x2F;www.redbus.in&#x2F;&quot; (PASSED : 7s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Select &quot;Koyambedu, Chennai&quot; in FROM textbox (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Select &quot;Goa&quot; in TO textbox (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Select &quot;19-Feb-2020&quot; in ONWARD DATE (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Select &quot;26-Feb-2020&quot; in RETURN DATE (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Click Search Buses button (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Verify the following text -&gt; &quot;XX Buses found&quot; (Please make sure atleast one found). (FAILED : 60s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Click VIEW SEATS button (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Select any one of the available seat. (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Select Sholinganallur radio button for Boarding point (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Select Panjim radio button for Dropping point (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Click the PROCEED TO BOOK button (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Verify the tick mark icon present or not for ONWARD JOURNEY (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Click the REMOVE RETURN button (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Verify Passenger Details form is displayed or not (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter Enter Name, Gender and age under Passenger Information (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter Email Id as XYZ@zmail.com (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter Phone number as 1122334455 (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Uncheck the &quot;Send booking details and updates on watsapp number&quot; (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Click PROCEED TO PAY button (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Verify the PAYMENT OPTION page is visible. (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Verify Your Passenger name is correct or not what you have entered in previous page (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Verify Seat number is correct or not what you have selected (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Click back to navigate previous page (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Click back to navigate Home page (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Unselect&#x2F;clear &quot;Koyambedu, Chennai&quot; in FROM textbox (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Unselect&#x2F;Clear &quot;Goa (All Locations)&quot; in TO textbox (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Unselect&#x2F;Clear &quot;19-Feb-2020&quot; in ONWARD DATE (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Close the browser (SKIPPED)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="76742" started-at="2020-02-18T15:36:31 IST" finished-at="2020-02-18T15:37:48 IST">
+    <groups>
+      <group name="cucumber scenarios">
+        <method signature="BaseTest.scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.stepDefinition.BaseTest@53f65459]" name="scenario" class="com.stepDefinition.BaseTest"/>
+      </group> <!-- cucumber scenarios -->
+    </groups>
+    <test name="Surefire test" duration-ms="76742" started-at="2020-02-18T15:36:31 IST" finished-at="2020-02-18T15:37:48 IST">
+      <class name="com.stepDefinition.BaseTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.stepDefinition.BaseTest@53f65459]" name="setUp" is-config="true" duration-ms="7183" started-at="2020-02-18T15:36:31 IST" finished-at="2020-02-18T15:36:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.stepDefinition.BaseTest@53f65459]" name="scenario" duration-ms="69317" started-at="2020-02-18T15:36:38 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-02-18T15:37:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Booking Bus Ticket 1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automating RedBus feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to contain "Search Bus Tickets". Current title: "Book Bus Travels, AC Volvo Bus, rPool & Bus Hire - redBus India" (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2OHSKTF', ip: '10.80.80.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.106, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\GRHOMB~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63178}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f469c37f47314b558878a4f3f042751f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Search Bus Tickets". Current title: "Book Bus Travels, AC Volvo Bus, rPool & Bus Hire - redBus India" (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2OHSKTF', ip: '10.80.80.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.106, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\GRHOMB~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63178}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f469c37f47314b558878a4f3f042751f
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.utility.Util.explicit_wait_for_title_present(Util.java:50)
+at com.stepDefinition.RedBus.verify_the_following_text_Please_make_sure_atleast_one_found(RedBus.java:59)
+at ✽.Verify the following text -> "XX Buses found" (Please make sure atleast one found).(src/test/resources/features/resbus.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">Launch the url - &quot;https:&#x2F;&#x2F;www.redbus.in&#x2F;&quot; (PASSED : 7s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Select &quot;Koyambedu, Chennai&quot; in FROM textbox (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Select &quot;Goa&quot; in TO textbox (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Select &quot;19-Feb-2020&quot; in ONWARD DATE (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Select &quot;26-Feb-2020&quot; in RETURN DATE (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Click Search Buses button (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Verify the following text -&gt; &quot;XX Buses found&quot; (Please make sure atleast one found). (FAILED : 60s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Click VIEW SEATS button (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Select any one of the available seat. (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Select Sholinganallur radio button for Boarding point (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Select Panjim radio button for Dropping point (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Click the PROCEED TO BOOK button (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Verify the tick mark icon present or not for ONWARD JOURNEY (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Click the REMOVE RETURN button (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Verify Passenger Details form is displayed or not (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter Enter Name, Gender and age under Passenger Information (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter Email Id as XYZ@zmail.com (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter Phone number as 1122334455 (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Uncheck the &quot;Send booking details and updates on watsapp number&quot; (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Click PROCEED TO PAY button (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Verify the PAYMENT OPTION page is visible. (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Verify Your Passenger name is correct or not what you have entered in previous page (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Verify Seat number is correct or not what you have selected (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Click back to navigate previous page (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Click back to navigate Home page (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Unselect&#x2F;clear &quot;Koyambedu, Chennai&quot; in FROM textbox (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Unselect&#x2F;Clear &quot;Goa (All Locations)&quot; in TO textbox (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Unselect&#x2F;Clear &quot;19-Feb-2020&quot; in ONWARD DATE (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Close the browser (SKIPPED)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.stepDefinition.BaseTest@53f65459]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-18T15:37:48 IST" finished-at="2020-02-18T15:37:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.stepDefinition.BaseTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

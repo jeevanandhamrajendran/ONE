@@ -1,10 +1,11 @@
 package com.stepDefinition;
 
-import org.openqa.selenium.WebDriver;
-
 import com.pageFactory.HomePage;
 import com.pageFactory.SearchBusTickets;
-import com.runner.TestRunner;
+import com.relevantcodes.extentreports.LogStatus;
+import com.testautomation.Listeners.ExtentReportListener;
+import com.utility.DriverFactory;
+import com.utility.GReporter;
 import com.utility.Util;
 
 import cucumber.api.PendingException;
@@ -12,9 +13,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class RedBus extends TestRunner{
+public class RedBus extends ExtentReportListener{
 	
-	WebDriver driver;
+	//WebDriver driver;
 	
 	HomePage homePage = new HomePage();
 	SearchBusTickets sbt= new SearchBusTickets();
@@ -22,13 +23,21 @@ public class RedBus extends TestRunner{
 	
 	@Given("^Launch the url - \"([^\"]*)\"$")
 	public void launch_the_url(String url) throws Throwable {
-		driver = BaseTest.driver;
-		util.launchURL(driver,url);
+		try {
+			//tlNode.set(test.createNode(Scenario.class, "open_Chrome_browser_with_URL"));
+			util.launchURL(DriverFactory.getCurrentDriver(),url);
+			GReporter.log(LogStatus.PASS,"Url has been launched");
+		} catch (AssertionError | Exception e) {
+//			testStepHandle("FAIL",DriverFactory.getCurrentDriver(),logInfo,e);	
+			GReporter.log(LogStatus.FAIL,"Url has not been launched "+e.getMessage());
+		}
+		
 	}
 
 	@When("^Select \"([^\"]*)\" in FROM textbox$")
 	public void select_in_FROM_textbox(String from) throws Throwable {
 		homePage.selectFromValue(from);
+		GReporter.log(LogStatus.PASS,"Entered the from valeue");
 		
 	}
 
@@ -56,14 +65,14 @@ public class RedBus extends TestRunner{
 
 	@Then("^Verify the following text -> \"([^\"]*)\" \\(Please make sure atleast one found\\)\\.$")
 	public void verify_the_following_text_Please_make_sure_atleast_one_found(String arg1) throws Throwable {
-	   util.explicit_wait_for_title_present("Search Bus Tickets");
+	   sbt.verifyTitle("Search Bus Tickets");
 	   sbt.isBusFound();
 	}
 
 	@Then("^Click VIEW SEATS button$")
 	public void click_VIEW_SEATS_button() throws Throwable {
 		 sbt.searchBusButton();
-		 util.explicit_wait_for_visibilityOfAllElements(sbt. getHideSeatsButton());
+		 sbt.clickViewSeats();
 	}
 
 	@Then("^Select any one of the available seat\\.$")

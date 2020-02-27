@@ -36,27 +36,27 @@ public class Util {
 		}
 	}
 
-	public void click_Action(WebElement ele) {
+	public void click_Action(WebElement ele,WebDriver driver) {
 		try {
-			Actions act = new Actions(BaseTest.driver);
+			Actions act = new Actions(driver);
 			act.moveToElement(ele).click().build().perform();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
-	public void explicit_wait_for_title_present(String title) {
-		WebDriverWait wait = new WebDriverWait(BaseTest.driver, 60);
+	public void explicit_wait_for_title_present(String title,WebDriver driver) {
+		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.titleContains(title));
 	}
 	
-	public void explicit_wait_for_visibilityOfAllElements(WebElement elements) {
-		WebDriverWait wait = new WebDriverWait(BaseTest.driver, 60);
+	public void explicit_wait_for_visibilityOfAllElements(WebElement elements,WebDriver driver) {
+		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOfAllElements(elements));
 	}
 	
-	public void click_canvas(WebElement canvasElement) {
-		Actions builder = new Actions(BaseTest.driver);
+	public void click_canvas(WebElement canvasElement,WebDriver driver) {
+		Actions builder = new Actions(driver);
 		builder.clickAndHold(canvasElement).moveByOffset(10, 50).
 		moveByOffset(50,10).
 		moveByOffset(-10,-50).

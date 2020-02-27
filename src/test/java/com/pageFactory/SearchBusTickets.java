@@ -2,24 +2,30 @@ package com.pageFactory;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.stepDefinition.BaseTest;
+import com.utility.DriverFactory;
 import com.utility.Util;
 
 public class SearchBusTickets {
 
 	Util util = new Util();
 
+	WebDriver driver = null;
 	public SearchBusTickets() {
-		PageFactory.initElements(BaseTest.driver, this);
+		driver = DriverFactory.getCurrentDriver();
+		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(xpath = "//span[@class='f-bold busFound']")
 	private List<WebElement> isBusFound;
 	public void isBusFound() throws InterruptedException {
+		Thread.sleep(2000);
 		if(!(isBusFound.size() > 0)) {
 			util.assertion(false, "No busses found.");
 		}else {
@@ -36,7 +42,7 @@ public class SearchBusTickets {
 	@FindBy(xpath="//div[@class='button hide-seats fr']")
 	private WebElement hideSeatsButton;
 	public void hideSeatsButton() {
-		util.explicit_wait_for_visibilityOfAllElements(hideSeatsButton);
+		util.explicit_wait_for_visibilityOfAllElements(hideSeatsButton,driver);
 	}
 	public WebElement getHideSeatsButton() {
 		return hideSeatsButton;
@@ -45,7 +51,7 @@ public class SearchBusTickets {
 	@FindBy(xpath="//canvas")
 	private WebElement seatSelect;
 	public void seatSelect() {
-		util.click_canvas(seatSelect);
+		util.click_canvas(seatSelect,driver);
 	}
 	
 	@FindBy(xpath="//span[text()='sholinganallur']/parent::div//preceding-sibling::div[@class='radio-css ']/div")
@@ -80,7 +86,15 @@ public class SearchBusTickets {
 	@FindBy(xpath="//div[@class='skipRet '][text()='REMOVE RETURN']")
 	private WebElement removeReturnLink;
 	public void clickRemoveReturnLink() {
-		util.click(removeReturnLink);
+		util.click(driver.findElement(By.xpath("//div[@class='skipRet '][text()='REMOVE RETURN']")));
+	}
+	
+	public void verifyTitle(String title) {
+		util.explicit_wait_for_title_present("Search Bus Tickets",driver);
+	}
+	
+	public void clickViewSeats() {
+		util.explicit_wait_for_visibilityOfAllElements(getHideSeatsButton(),driver);
 	}
 	
 }
